@@ -1,0 +1,34 @@
+{
+  "name": "php127/websiteinfo",
+  "description": "息",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "读心印",
+      "email": "839024615@qq.com"
+    }
+  ],
+  "require": {
+    "jaeger/querylist": "~V4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Php127\\WebsiteInfo\\": "./src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Php127\\Tests\\": "./tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "friendsofphp/php-cs-fixer": "^2.18"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --colors=always --testdox",
+    "check-style": "php-cs-fixer fix --using-cache=no --diff --config=.php_cs --dry-run --ansi",
+    "fix-style": "php-cs-fixer fix --using-cache=no --config=.php_cs --ansi"
+  }
+}
