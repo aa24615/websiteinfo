@@ -9,9 +9,9 @@
     <meta name="keywords" content="PSD源码,QQ素材,微信素材,PPT下载,矢量素材,网页素材,音效素材,软件下载,字体下载,vip账号,win激活码,活动资讯,薅羊毛,游戏攻略,,94素材">
     <meta name="description" content="综合性素材分享网,免费提供(PSD源码,QQ微信素材,PPT矢量素材,网页素材,音效素材,软件字体,vip账号分享,win激活码,活动资讯,薅羊毛,游戏攻略) 等素材下载">
     <meta name="baidu-site-verification" content="io08XaCgLh" />
-    <link href="//www.94sc.net//Public/Common/layui/css/layui.css?v=20201120091110" rel="stylesheet">
-    <link href="//www.94sc.net//Public/2018/css/style.css?v=20201120091110" rel="stylesheet">
-    <link href="//www.94sc.net//Public/2018/css/style.css?v=20201120091110" rel="icon">
+    <link href="/94sc.txt/www.94sc.net//Public/Common/layui/css/layui.css?v=20201120091110" rel="stylesheet">
+    <link href="/94sc.txt/www.94sc.net//Public/2018/css/style.css?v=20201120091110" rel="stylesheet">
+    <link href="/94sc.txt/www.94sc.net//Public/2018/css/style.css?v=20201120091110" rel="icon">
     <script>
         var config = {
             public:"//www.94sc.net//Public",
@@ -57,7 +57,7 @@
 <header>
     <div class="layui-container">
         <a class="logo l" href="https://www.94sc.net/index.html" title="94素材网">
-            <img alt="94素材网" src="//www.94sc.net//Public/2018/img/logo.png" />
+            <img alt="94素材网" src="/94sc.txt/www.94sc.net//Public/2018/img/logo.png" />
         </a>
 
         <ul class="nav l layui-hide-xs layui-hide-sm layui-show-md-block layui-show-lg-block">
@@ -98,8 +98,8 @@
             <div class="layui-col-md8 left">
                 <div class="layui-carousel" id="carousel">
                     <div carousel-item>
-                        <div><img src="//www.94sc.net//Public/2018/img/banner-1.png" /></div>
-                        <div><img src="//www.94sc.net//Public/2018/img/banner-2.png" /></div>
+                        <div><img src="/94sc.txt/www.94sc.net//Public/2018/img/banner-1.png" /></div>
+                        <div><img src="/94sc.txt/www.94sc.net//Public/2018/img/banner-2.png" /></div>
                     </div>
                 </div>
             </div>
@@ -621,7 +621,7 @@
                 <h1>微信公众号</h1>
                 <ul>
                     <li>
-                        <img src="//www.94sc.net//Public/Common/img/weixin_qrcode.png" class="qrcode" />
+                        <img src="/94sc.txt/www.94sc.net//Public/Common/img/weixin_qrcode.png" class="qrcode" />
                     </li>
                 </ul>
             </li>
@@ -650,11 +650,11 @@
 <div class="qrcode layui-anim layui-anim-up">
     <div class="layui-row">
         <div class="layui-col-md6">
-            <img src="//www.94sc.net//Public/Common/img/wap_qrcode.png" />
+            <img src="/94sc.txt/www.94sc.net//Public/Common/img/wap_qrcode.png" />
             <p>手机访问</p>
         </div>
         <div class="layui-col-md6">
-            <img src="//www.94sc.net//Public/Common/img/weixin_qrcode.png" />
+            <img src="/94sc.txt/www.94sc.net//Public/Common/img/weixin_qrcode.png" />
             <p>微信公众号</p>
         </div>
     </div>
