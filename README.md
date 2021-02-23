@@ -26,7 +26,7 @@
 ## 安装
 
 ```shell
-composer install php127/websiteinfo -vvv
+composer require php127/websiteinfo -vvv
 ```
 ## 用法
 
