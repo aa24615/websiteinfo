@@ -14,6 +14,13 @@ class WebsiteInfoTest extends TestCase
         $this->html = file_get_contents('./tests/file/94sc.txt');
     }
 
+    public function testGet(): void
+    {
+        $webinfo = new WebsiteInfo($this->html);
+        $res = $webinfo->get();
+
+        $this->assertTrue(is_array($res) && count($res) > 0);
+    }
 
     public function testGetBeian(): void
     {

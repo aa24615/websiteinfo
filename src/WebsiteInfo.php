@@ -14,6 +14,7 @@ namespace Php127\WebsiteInfo;
 
 use Php127\WebsiteInfo\Seek\EmailSeek;
 use Php127\WebsiteInfo\Seek\QQSeek;
+use Php127\WebsiteInfo\Seek\WeiwinSeek;
 use QL\QueryList;
 
 class WebsiteInfo
@@ -44,6 +45,7 @@ class WebsiteInfo
             'logo' => $this->getLogo(),
             'icon' => $this->getIcon(),
             'qq' => $this->getQQ(),
+            'weixin' => $this->getWeixin(),
             'beian' => $this->getBeian(),
             'security' => $this->getSecurity(),
             'isCnzzTongji' => $this->isCnzzTongji(),
@@ -110,6 +112,11 @@ class WebsiteInfo
         return QQSeek::find($this->html);
     }
 
+    public function getWeixin(): array
+    {
+        return WeiwinSeek::find($this->html);
+    }
+
     public function getEmail(): array
     {
         $email = EmailSeek::find($this->html);
@@ -145,11 +152,5 @@ class WebsiteInfo
         } else {
             return false;
         }
-    }
-
-
-    public function getWeixin(): string
-    {
-        return '';
     }
 }

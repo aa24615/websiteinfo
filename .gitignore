@@ -1,5 +1,4 @@
 .idea
-test.php
 vendor
 composer.lock
 .php_cs.cache
