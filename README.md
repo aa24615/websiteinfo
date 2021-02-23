@@ -4,6 +4,20 @@
 
 从html代码中分析网站信息
 
+- 获取网站title
+- 获取网站keywords
+- 获取网站description
+- 获取网站logo
+- 获取网站icon
+- 获取网站ICP备案号
+- 获取网站公安备案号
+- 获取网站联系QQ
+- 获取网站联系微信
+- 获取网站联系邮箱
+- 网站是否使用cnzz统计
+- 网站是否使用百度统计
+- 网站是否使用51.la统计
+
 
 ## 安装
 
@@ -18,23 +32,15 @@ use Php127\WebsiteInfo\WebsiteInfo;
 $str = file_get_contents('http://www.test.com');
 
 $webinfo = new WebsiteInfo($str);
-
-//
-
-
 ```
 
-- 获取所有信息
-
-
+获取所有信息
 
 ```php
 
 $webinfo->get();
 
-
 /*
-返回值
 Array
 (
     [title] => test标题
@@ -115,4 +121,4 @@ $webinfo->isWuyilaTongji();
 
 ## License
 
-[MIT license](https://opensource.org/licenses/MIT).
+[MIT license](https://opensource.org/licenses/MIT)
