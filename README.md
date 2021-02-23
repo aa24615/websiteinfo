@@ -18,6 +18,10 @@
 - 网站是否使用百度统计
 - 网站是否使用51.la统计
 
+## 要求
+
+1. php >= 7.3
+2. Composer
 
 ## 安装
 
@@ -109,6 +113,17 @@ $webinfo->isBaiduTongji();
 
 //网站是否使用51.la统计
 $webinfo->isWuyilaTongji();
+```
+
+重新设置html
+
+```php
+$str = file_get_contents('http://www.test2.com');
+
+//当同时分析多个页面时,无需再次new WebsiteInfo
+$webinfo->setHtml($str);
+$webinfo->getLogo();
+//...
 ```
 
 ## 参与贡献
