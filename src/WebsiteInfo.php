@@ -4,30 +4,42 @@
 /*
  * This file is part of the php127/websiteinfo.
  *
- * (c) overtrue <i@overtrue.me>
+ * (c) 读心印 <aa24615@qq.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Php127\WebsiteInfo;
+namespace Php127;
 
-use Php127\WebsiteInfo\Seek\EmailSeek;
-use Php127\WebsiteInfo\Seek\QQSeek;
-use Php127\WebsiteInfo\Seek\WeiwinSeek;
+use Php127\Seek\EmailSeek;
+use Php127\Seek\QQSeek;
+use Php127\Seek\WeiwinSeek;
 use QL\QueryList;
 
+/**
+ * WebsiteInfo.
+ *
+ * @author 读心印 <aa24615@qq.com>
+ */
 class WebsiteInfo
 {
     public $html = null;
     public $ql = null;
+
 
     public function __construct(string $str)
     {
         $this->setHtml($str);
     }
 
-
+    /**
+     * 设置html
+     *
+     * @param string $str
+     *
+     * @return void
+     */
     public function setHtml(string $str): void
     {
         $this->ql = null;
@@ -35,7 +47,11 @@ class WebsiteInfo
     }
 
 
-
+    /**
+     * 获取所有信息
+     *
+     * @return array
+     */
     public function get()
     {
         return [

@@ -1,17 +1,32 @@
 <?php
 
-namespace Php127\WebsiteInfo\Seek;
+/*
+ * This file is part of the php127/websiteinfo.
+ *
+ * (c) 读心印 <aa24615@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 
+namespace Php127\Seek;
+
+/**
+ * QQSeek.
+ *
+ * @author 读心印 <aa24615@qq.com>
+ */
 class QQSeek
 {
     /**
-     * @Description 通过html获取QQ号
+     * 通过html获取QQ号
      *
-     * @Params string $str
-     * @Params bool $accurate
+     * @param string $str
+     * @param bool $accurate
      *
      * @return array
      */
+
     public static function find(string $str, bool $accurate = false)
     {
         $qq = [];

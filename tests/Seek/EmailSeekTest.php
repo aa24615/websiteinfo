@@ -1,10 +1,24 @@
 <?php
 
+/*
+ * This file is part of the php127/websiteinfo.
+ *
+ * (c) 读心印 <aa24615@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Php127\Tests\Seek;
 
-use Php127\WebsiteInfo\Seek\EmailSeek;
+use Php127\Seek\EmailSeek;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * EmailSeekTest.
+ *
+ * @author 读心印 <aa24615@qq.com>
+ */
 class EmailSeekTest extends TestCase
 {
     public function setUp(): void

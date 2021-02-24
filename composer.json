@@ -1,6 +1,13 @@
 {
   "name": "php127/websiteinfo",
-  "description": "息",
+  "description": "从html代码中分析网站信息",
+  "keywords": [
+    "网站信息",
+    "获取网站信息",
+    "备案查询",
+    "分析网站首页",
+    "获取网站资料"
+  ],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Php127\\WebsiteInfo\\": "./src/"
+      "Php127\\": "./src/"
     }
   },
   "autoload-dev": {

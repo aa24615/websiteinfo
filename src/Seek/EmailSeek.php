@@ -1,14 +1,29 @@
 <?php
 
-namespace Php127\WebsiteInfo\Seek;
+/*
+ * This file is part of the php127/websiteinfo.
+ *
+ * (c) 读心印 <aa24615@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+namespace Php127\Seek;
+
+/**
+ * EmailSeek.
+ *
+ * @author 读心印 <aa24615@qq.com>
+ */
 
 class EmailSeek
 {
     /**
-     * @Description 通过html获取Email
+     * 通过html获取Email
      *
-     * @Params string $str
-     * @Params bool $accurate
+     * @param string $str
+     * @param bool $accurate
      *
      * @return array
      */
@@ -27,6 +42,14 @@ class EmailSeek
 
         return array_unique($email);
     }
+    /**
+     * @Description 通过html获取Email
+     *
+     * @Params string $str
+     * @Params bool $accurate
+     *
+     * @return array
+     */
     public static function mailto(string $str)
     {
         preg_match_all('/href="mailto:(.*?)"/im', $str, $matches);

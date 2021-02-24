@@ -1,10 +1,24 @@
 <?php
 
+/*
+ * This file is part of the php127/websiteinfo.
+ *
+ * (c) 读心印 <aa24615@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Php127\Tests;
 
-use Php127\WebsiteInfo\WebsiteInfo;
+use Php127\WebsiteInfo;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * WebsiteInfoTest.
+ *
+ * @author 读心印 <aa24615@qq.com>
+ */
 class WebsiteInfoTest extends TestCase
 {
     public function setUp(): void

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/wechat.
+ * This file is part of the php127/websiteinfo.
  *
  * (c) 读心印 <aa24615@qq.com>
  *

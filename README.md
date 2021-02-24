@@ -31,7 +31,7 @@ composer require php127/websiteinfo -vvv
 ## 用法
 
 ```php
-use Php127\WebsiteInfo\WebsiteInfo;
+use Php127\WebsiteInfo;
 
 $str = file_get_contents('http://www.test.com');
 
