@@ -4,6 +4,7 @@
 
 从html代码中分析网站信息
 
+- 获取网站名称
 - 获取网站title
 - 获取网站keywords
 - 获取网站description
@@ -47,6 +48,7 @@ $webinfo->get();
 /*
 Array
 (
+    [name] => 网站名称
     [title] => test标题
     [keywords] => test关健词
     [description] => test描述
@@ -75,6 +77,9 @@ Array
 单个获取
 
 ```php
+//获取网站名称
+$webinfo->getName();
+
 //获取网站title
 $webinfo->getTitle();
 

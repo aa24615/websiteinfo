@@ -13,6 +13,7 @@
 namespace Php127;
 
 use Php127\Seek\EmailSeek;
+use Php127\Seek\NameSeek;
 use Php127\Seek\QQSeek;
 use Php127\Seek\WeiwinSeek;
 use QL\QueryList;
@@ -55,6 +56,7 @@ class WebsiteInfo
     public function get()
     {
         return [
+            'name' => $this->getName(),
             'title' => $this->getTitle(),
             'keywords' => $this->getKeywords(),
             'description' => $this->getDescription(),
@@ -78,6 +80,11 @@ class WebsiteInfo
         }
 
         return $this->ql;
+    }
+
+    public function getName(): string
+    {
+        return NameSeek::find($this->getTitle());
     }
 
     public function getTitle(): string

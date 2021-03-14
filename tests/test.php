@@ -31,6 +31,7 @@ $urls = [
     'www.qq.com',
     "www.94sc.net",
     "www.qadmin.net",
+    "www.php.cn",
 ];
 
 foreach ($urls as $url) {
