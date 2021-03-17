@@ -33,6 +33,16 @@ class NameSeekTest extends TestCase
         $this->titles = explode(PHP_EOL, $text);
     }
 
+    public function testFilterStr()
+    {
+        $str = NameSeek::filterStr("[腾讯网");
+
+        $this->assertTrue($str === "腾讯网");
+
+        $str = NameSeek::filterStr("【腾讯网");
+
+        $this->assertTrue($str === "腾讯网");
+    }
 
     public function testSetStr()
     {

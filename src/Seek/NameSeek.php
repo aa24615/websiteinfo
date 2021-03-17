@@ -55,6 +55,25 @@ class NameSeek
         return $newArr;
     }
 
+
+    /**
+     * 过滤无效字符.
+     *
+     * @param string $str
+     *
+     * @return string
+     *
+     * @author 读心印 <aa24615@qq.com>
+     */
+    public static function filterStr(string $str)
+    {
+        $str = str_replace('[', '', $str);
+        $str = str_replace(']', '', $str);
+        $str = str_replace('】', '', $str);
+        $str = str_replace('【', '', $str);
+        return $str;
+    }
+
     /**
      * 获取网站名.
      *
@@ -69,7 +88,7 @@ class NameSeek
         $xxWang = self::xxWang($str);
 
         if ($xxWang) {
-            return $xxWang[0];
+            return self::filterStr($xxWang[0]);
         }
 
         $endStr = self::endStr($str);
