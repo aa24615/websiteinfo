@@ -44,7 +44,6 @@ class WebsiteInfoTest extends TestCase
         $this->assertTrue(!empty($res));
     }
 
-
     public function testGetSecurity(): void
     {
         $webinfo = new WebsiteInfo($this->html);

@@ -89,17 +89,17 @@ class WebsiteInfo
 
     public function getTitle(): string
     {
-        return $this->ql()->find('title')->text();
+        return $this->ql()->find('title')->text() ?? '';
     }
 
     public function getKeywords(): string
     {
-        return $this->ql()->find('meta[name=keywords]')->attr('content');
+        return $this->ql()->find('meta[name=keywords]')->attr('content') ?? '';
     }
 
     public function getDescription(): string
     {
-        return $this->ql()->find('meta[name=description]')->attr('content');
+        return $this->ql()->find('meta[name=description]')->attr('content') ?? '';
     }
 
 
@@ -117,17 +117,17 @@ class WebsiteInfo
     }
     public function getIcon(): string
     {
-        return $this->ql()->find('link[rel=icon]')->attr('href');
+        return $this->ql()->find('link[rel=icon]')->attr('href') ?? '';
     }
 
     public function getBeian(): string
     {
-        return $this->ql()->find('a[href*="beian.miit.gov.cn"]')->text();
+        return $this->ql()->find('a[href*="beian.miit.gov.cn"]')->text() ?? '';
     }
 
     public function getSecurity(): string
     {
-        return $this->ql()->find('a[href*="beian.gov.cn"]')->text();
+        return $this->ql()->find('a[href*="beian.gov.cn"]')->text() ?? '';
     }
 
     public function getQQ(): array
